@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @time	2019年7月1日
  * @QQ		2641195399
  * @注释
- * 			泛型  E T K V
+ * 			泛型  E T K V  1.5以后
  */
 public class Dm_Generic {
 	
