@@ -11,12 +11,10 @@ package club.kegh.regular;
  */
 
 
-public class RegexDemo1 {
+public class Dm_Regex1 {
 
 	public static void main(String[] args) {
 		//\n 代表换行符 \t 制表符 \\ 代表\本身 \^ ，\$,\.，\(， \) ， \{， \} ， \? ， \+ ， \* ， \| ，\[， \] 匹配这些字符本身
-
-		
 		
 		
 	}

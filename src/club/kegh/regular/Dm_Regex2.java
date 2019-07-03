@@ -5,14 +5,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *@author	By--柯庚宏
- *@user	Administrator
- *@time	2019年6月26日
- *@QQ	2641195399 
- *@注释	
- *		正则在java中的应用
-*/
-public class RegexDemo2 {
+ * 
+ * @author	By--柯庚宏
+ * @user	kegh
+ * @time	2019年7月3日
+ * @QQ		2641195399
+ * @注释
+ * 			正则在java中的应用
+ */
+public class Dm_Regex2 {
 	
 	public static void main(String[] args) {
 		String regex="\\w+"; //java中单个\要变成双\\
@@ -75,5 +76,5 @@ public class RegexDemo2 {
 		String[] split = str.split("\\d+");
 		System.out.println(Arrays.toString(split));
 	}
-
+	
 }
