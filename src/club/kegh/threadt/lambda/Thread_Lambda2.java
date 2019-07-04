@@ -1,4 +1,4 @@
-package club.kegh.threadt;
+package club.kegh.threadt.lambda;
 
 public class Thread_Lambda2 {
 	
@@ -28,19 +28,24 @@ public class Thread_Lambda2 {
 			}
 		}).start();
 		
+		
+		new Thread(()->{
+			for(int i=0;i<100;i++) {
+				System.out.println("多行没法省略....");
+			}
+		}) .start();
+		
 		//Lambda 推导1
 		new Thread(()->{
 			System.out.println("Lambda 推导1");
 		}).start();
 		
+		//Lambda 推导2
+		Runnable t=()->System.out.println("Lambda 推导2");
+		new Thread(t).start();
 		
-		//Lambda 推导1
-		new Thread(()->{
-			System.out.println("Lambda 推导1");
-		}).start();
-		
-		
-		
+		//Lambda 推导3
+		new Thread(()->System.out.println("Lambda 推导3")).start();
 		
 	}
 

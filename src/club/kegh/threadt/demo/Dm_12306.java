@@ -1,4 +1,4 @@
-package club.kegh.threadt;
+package club.kegh.threadt.demo;
 
 
 /**

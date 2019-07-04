@@ -1,4 +1,4 @@
-package club.kegh.threadt;
+package club.kegh.threadt.lambda;
 
 public class Thread_Lambda {
 	
@@ -50,7 +50,7 @@ public class Thread_Lambda {
 		
 		
 		//Lambda 推导3   如果一个参数可以省略()
-		like = (status,method)->status+","+method;
+		iLike2 like2 = status->status;
 		
 	}
 	
@@ -60,4 +60,9 @@ public class Thread_Lambda {
 //		public String study(String status);   必须只有一个方法
 	}
 
+	
+	interface iLike2{
+		public String study(String status);
+//		public String study(String status);   必须只有一个方法
+	}
 }
