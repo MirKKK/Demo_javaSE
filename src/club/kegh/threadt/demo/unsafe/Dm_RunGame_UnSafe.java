@@ -1,4 +1,4 @@
-package club.kegh.threadt.demo;
+package club.kegh.threadt.demo.unsafe;
 
 /**
  * 
@@ -9,12 +9,12 @@ package club.kegh.threadt.demo;
  * @注释
  * 			模拟龟兔赛跑
  */
-public class Dm_RunGame implements Runnable {
+public class Dm_RunGame_UnSafe implements Runnable {
 
 	public static String winner;// 胜出者
 
 	public static void main(String[] args) {
-		Dm_RunGame game=new Dm_RunGame();
+		Dm_RunGame_UnSafe game=new Dm_RunGame_UnSafe();
 		
 		new Thread(game,"兔子").start();
 		new Thread(game,"乌龟").start();
