@@ -50,7 +50,7 @@ class Markup extends Thread {
 	}
 
 	// 相互持有对方的对象锁-->可能造成死锁
-	private void markup() {
+	public void markup() {
 		if (choice == 0) {
 			synchronized (lipstick) { // 获得口红的锁
 				System.out.println(this.girl + "涂口红");
